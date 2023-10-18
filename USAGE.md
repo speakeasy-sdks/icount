@@ -7,10 +7,9 @@
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \iCount\iCount\ICount;
+use iCount\iCount\ICount;
 
-$sdk = ICount::builder()
-    ->build();
+$sdk = ICount::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
@@ -21,5 +20,6 @@ try {
 } catch (Exception $e) {
     // handle exception
 }
+
 ```
 <!-- End SDK Example Usage -->

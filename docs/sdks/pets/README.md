@@ -105,7 +105,7 @@ $sdk = ICount::builder()
 
 try {
     $request = new ShowPetByIdRequest();
-    $request->petId = 'Bicycle';
+    $request->petId = 'string';
 
     $response = $sdk->pets->showPetById($request);
 

@@ -2,22 +2,25 @@ configVersion: 1.0.0
 management:
   docChecksum: 2516596125ef223fbbef6c434d22eaac
   docVersion: 1.0.0
-  speakeasyVersion: 1.101.0
-  generationVersion: 2.161.0
+  speakeasyVersion: 1.104.0
+  generationVersion: 2.169.0
 generation:
   comments:
     disableComments: false
     omitDescriptionIfSummaryPresent: false
   baseServerURL: ""
+  repoURL: https://github.com/speakeasy-sdks/icount.git
   sdkClassName: iCount
   singleTagPerOp: false
   tagNamespacingDisabled: false
 features:
   php:
-    core: 2.88.2
+    core: 2.89.0
     globalServerURLs: 2.82.0
 php:
-  version: 0.1.1
+  version: 0.2.0
+  installationURL: https://github.com/speakeasy-sdks/icount
   maxMethodParams: 0
   namespace: iCount\iCount
   packageName: icount/icount
+  repoSubDirectory: .

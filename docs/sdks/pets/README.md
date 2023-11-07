@@ -1,5 +1,5 @@
 # Pets
-(*pets*)
+
 
 ### Available Operations
 
@@ -19,9 +19,9 @@ Create a pet
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \iCount\iCount\ICount;
+use \iCount\iCount;
 
-$sdk = ICount::builder()
+$sdk = iCount\ICount::builder()
     ->build();
 
 try {
@@ -53,14 +53,14 @@ List all pets
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \iCount\iCount\ICount;
-use \iCount\iCount\Models\Operations\ListPetsRequest;
+use \iCount\iCount;
+use \iCount\iCount\Models\Operations;
 
-$sdk = ICount::builder()
+$sdk = iCount\ICount::builder()
     ->build();
 
 try {
-    $request = new ListPetsRequest();
+    $request = new Operations\ListPetsRequest();
     $request->limit = 21453;
 
     $response = $sdk->pets->listPets($request);
@@ -97,14 +97,14 @@ Info for a specific pet
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use \iCount\iCount\ICount;
-use \iCount\iCount\Models\Operations\ShowPetByIdRequest;
+use \iCount\iCount;
+use \iCount\iCount\Models\Operations;
 
-$sdk = ICount::builder()
+$sdk = iCount\ICount::builder()
     ->build();
 
 try {
-    $request = new ShowPetByIdRequest();
+    $request = new Operations\ShowPetByIdRequest();
     $request->petId = 'string';
 
     $response = $sdk->pets->showPetById($request);

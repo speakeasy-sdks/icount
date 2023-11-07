@@ -7,9 +7,9 @@
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use iCount\iCount\ICount;
+use iCount\iCount;
 
-$sdk = ICount::builder()->build();
+$sdk = iCount\ICount::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();

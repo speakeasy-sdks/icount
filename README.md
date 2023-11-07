@@ -42,9 +42,9 @@ composer update
 declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
-use iCount\iCount\ICount;
+use iCount\iCount;
 
-$sdk = ICount::builder()->build();
+$sdk = iCount\ICount::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
@@ -63,7 +63,7 @@ try {
 ## Available Resources and Operations
 
 
-### [pets](docs/sdks/pets/README.md)
+### [Pets](docs/sdks/pets/README.md)
 
 * [createPets](docs/sdks/pets/README.md#createpets) - Create a pet
 * [listPets](docs/sdks/pets/README.md#listpets) - List all pets

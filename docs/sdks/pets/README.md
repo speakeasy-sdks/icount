@@ -38,7 +38,7 @@ try {
 
 ### Response
 
-**[?\iCount\iCount\Models\Operations\CreatePetsResponse](../../models/operations/CreatePetsResponse.md)**
+**[?\iCount\iCount\Models\Operations\CreatePetsResponse](../../Models/Operations/CreatePetsResponse.md)**
 
 
 ## listPets
@@ -77,12 +77,12 @@ try {
 
 | Parameter                                                                                      | Type                                                                                           | Required                                                                                       | Description                                                                                    |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
-| `$request`                                                                                     | [\iCount\iCount\Models\Operations\ListPetsRequest](../../models/operations/ListPetsRequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
+| `$request`                                                                                     | [\iCount\iCount\Models\Operations\ListPetsRequest](../../Models/Operations/ListPetsRequest.md) | :heavy_check_mark:                                                                             | The request object to use for the request.                                                     |
 
 
 ### Response
 
-**[?\iCount\iCount\Models\Operations\ListPetsResponse](../../models/operations/ListPetsResponse.md)**
+**[?\iCount\iCount\Models\Operations\ListPetsResponse](../../Models/Operations/ListPetsResponse.md)**
 
 
 ## showPetById
@@ -121,10 +121,10 @@ try {
 
 | Parameter                                                                                            | Type                                                                                                 | Required                                                                                             | Description                                                                                          |
 | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| `$request`                                                                                           | [\iCount\iCount\Models\Operations\ShowPetByIdRequest](../../models/operations/ShowPetByIdRequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
+| `$request`                                                                                           | [\iCount\iCount\Models\Operations\ShowPetByIdRequest](../../Models/Operations/ShowPetByIdRequest.md) | :heavy_check_mark:                                                                                   | The request object to use for the request.                                                           |
 
 
 ### Response
 
-**[?\iCount\iCount\Models\Operations\ShowPetByIdResponse](../../models/operations/ShowPetByIdResponse.md)**
+**[?\iCount\iCount\Models\Operations\ShowPetByIdResponse](../../Models/Operations/ShowPetByIdResponse.md)**
 

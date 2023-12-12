@@ -21,8 +21,7 @@ require_once 'vendor/autoload.php';
 
 use \iCount\iCount;
 
-$sdk = iCount\ICount::builder()
-    ->build();
+$sdk = iCount\ICount::builder()->build();
 
 try {
     $response = $sdk->pets->createPets();
@@ -56,12 +55,11 @@ require_once 'vendor/autoload.php';
 use \iCount\iCount;
 use \iCount\iCount\Models\Operations;
 
-$sdk = iCount\ICount::builder()
-    ->build();
+$sdk = iCount\ICount::builder()->build();
 
 try {
-    $request = new Operations\ListPetsRequest();
-    $request->limit = 21453;
+        $request = new Operations\ListPetsRequest();
+    $request->limit = 21453;;
 
     $response = $sdk->pets->listPets($request);
 
@@ -100,12 +98,11 @@ require_once 'vendor/autoload.php';
 use \iCount\iCount;
 use \iCount\iCount\Models\Operations;
 
-$sdk = iCount\ICount::builder()
-    ->build();
+$sdk = iCount\ICount::builder()->build();
 
 try {
-    $request = new Operations\ShowPetByIdRequest();
-    $request->petId = 'string';
+        $request = new Operations\ShowPetByIdRequest();
+    $request->petId = 'string';;
 
     $response = $sdk->pets->showPetById($request);
 

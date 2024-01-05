@@ -1,19 +1,10 @@
-configVersion: 1.0.0
-management:
-  docChecksum: 2516596125ef223fbbef6c434d22eaac
-  docVersion: 1.0.0
-  speakeasyVersion: 1.126.0
-  generationVersion: 2.213.3
+configVersion: 2.0.0
 generation:
-  comments: {}
   sdkClassName: iCount
-  repoURL: https://github.com/speakeasy-sdks/icount.git
   usageSnippets:
     optionalPropertyRendering: withExample
-features:
-  php:
-    core: 3.2.0
-    globalServerURLs: 2.82.1
+  fixes:
+    nameResolutionDec2023: false
 php:
   version: 0.4.0
   imports:
@@ -25,9 +16,7 @@ php:
       shared: Models/Shared
       webhooks: Models/Webhooks
   inputModelSuffix: input
-  installationURL: https://github.com/speakeasy-sdks/icount
   maxMethodParams: 0
   namespace: iCount\iCount
   outputModelSuffix: output
   packageName: icount/icount
-  repoSubDirectory: .

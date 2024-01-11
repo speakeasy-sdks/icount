@@ -20,11 +20,17 @@ declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
 use \iCount\iCount;
+use \iCount\iCount\Models\Shared;
 
 $sdk = iCount\ICount::builder()->build();
 
 try {
-    $response = $sdk->pets->createPets();
+        $request = new Shared\Pet();
+    $request->id = 596804;
+    $request->name = 'string';
+    $request->tag = 'string';;
+
+    $response = $sdk->pets->createPets($request);
 
     if ($response->statusCode === 200) {
         // handle response
@@ -33,6 +39,12 @@ try {
     // handle exception
 }
 ```
+
+### Parameters
+
+| Parameter                                                      | Type                                                           | Required                                                       | Description                                                    |
+| -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------- |
+| `$request`                                                     | [\iCount\iCount\Models\Shared\Pet](../../Models/Shared/Pet.md) | :heavy_check_mark:                                             | The request object to use for the request.                     |
 
 
 ### Response

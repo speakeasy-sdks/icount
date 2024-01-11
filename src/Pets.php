@@ -24,15 +24,22 @@ class Pets
     /**
      * Create a pet
      * 
+     * @param \iCount\iCount\Models\Shared\Pet $request
      * @return \iCount\iCount\Models\Operations\CreatePetsResponse
      */
 	public function createPets(
+        \iCount\iCount\Models\Shared\Pet $request,
     ): \iCount\iCount\Models\Operations\CreatePetsResponse
     {
         $baseUrl = $this->sdkConfiguration->getServerUrl();
         $url = Utils\Utils::generateUrl($baseUrl, '/pets');
         
         $options = ['http_errors' => false];
+        $body = Utils\Utils::serializeRequestBody($request, "request", "json");
+        if ($body === null) {
+            throw new \Exception('Request body is required');
+        }
+        $options = array_merge_recursive($options, $body);
         $options['headers']['Accept'] = 'application/json';
         $options['headers']['user-agent'] = $this->sdkConfiguration->userAgent;
         

@@ -4,7 +4,7 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.230.3
+  generationVersion: 2.237.2
   releaseVersion: 0.4.1
   configChecksum: 818c26b16ac3040adf30cbd8ae91d409
   repoURL: https://github.com/speakeasy-sdks/icount.git

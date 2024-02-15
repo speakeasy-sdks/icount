@@ -13,8 +13,8 @@ $sdk = iCount\ICount::builder()->build();
 try {
     $request = new Shared\Pet();
     $request->id = 596804;
-    $request->name = 'string';
-    $request->tag = 'string';
+    $request->name = '<value>';
+    $request->tag = '<value>';
 
     $response = $sdk->pets->createPets($request);
 

@@ -4,15 +4,15 @@ management:
   docChecksum: 1bdb7a6f8bf3995d4b40475228403253
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.253.0
-  releaseVersion: 0.4.2
-  configChecksum: cfb7e270eefff416a350f35b07c41b22
+  generationVersion: 2.258.2
+  releaseVersion: 0.4.3
+  configChecksum: 2d8c45e8b50fd0e3d258400df02fbbba
   repoURL: https://github.com/speakeasy-sdks/icount.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/icount
 features:
   php:
-    core: 3.3.1
+    core: 3.3.2
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/SDKConfiguration.php

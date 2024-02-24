@@ -17,7 +17,8 @@ Create a pet
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \iCount\iCount;
 use \iCount\iCount\Models\Shared;
@@ -62,7 +63,8 @@ List all pets
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \iCount\iCount;
 use \iCount\iCount\Models\Operations;
@@ -105,7 +107,8 @@ Info for a specific pet
 <?php
 
 declare(strict_types=1);
-require_once 'vendor/autoload.php';
+
+require 'vendor/autoload.php';
 
 use \iCount\iCount;
 use \iCount\iCount\Models\Operations;

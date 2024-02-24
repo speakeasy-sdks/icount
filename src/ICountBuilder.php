@@ -16,11 +16,9 @@ namespace iCount\iCount;
  */
 class ICountBuilder
 {
-    private SDKConfiguration $sdkConfig;
-
-    public function __construct() {
-        $this->sdkConfig = new SDKConfiguration();
-    }
+    public function __construct(
+        private SDKConfiguration $sdkConfig = new SDKConfiguration(),
+    ) {}
 
     /**
      * setClient allows setting a custom Guzzle client for the SDK to make requests with.
@@ -31,6 +29,7 @@ class ICountBuilder
     public function setClient(\GuzzleHttp\ClientInterface $client): ICountBuilder
     {
         $this->sdkConfig->defaultClient = $client;
+
         return $this;
     }
     
@@ -44,6 +43,7 @@ class ICountBuilder
     public function setServerUrl(string $serverUrl, ?array $params = null): ICountBuilder
     {
         $this->sdkConfig->serverUrl = Utils\Utils::templateUrl($serverUrl, $params);
+
         return $this;
     }
     
@@ -56,6 +56,7 @@ class ICountBuilder
     public function setServerIndex(int $serverIdx): ICountBuilder
     {
         $this->sdkConfig->serverIndex = $serverIdx;
+
         return $this;
     }
     
